@@ -5,6 +5,11 @@ let v = document.createElement("TR");
 	let  f=document.createElement("td");
 	f.innerText("New Cell2");
 	v.appendChild(b);
-	b.appendChild(f);
-tr.appendChild(v);
+	v.appendChild(f);
+ let table = document.getElementById("sampleTable");
+
+
+    if (table) {
+        table.insertBefore(v, table.firstChild);
+    }
 }
