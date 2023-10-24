@@ -19,7 +19,8 @@ function insert_Row() {
 
     // Insert the new row at the top of the table
     if (table) {
-        table.insertBefore(newRow, table.firstChild);
+        table.insertBefore(newRow, table.rows[0]);
     }
 }
+
 
